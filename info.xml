@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding="ISO-8859-1"?>
+<jtlshop3plugin>
+    <Name>Bilder-Cleaner</Name>
+    <Description>Entfernen von Bildleichen aus den Produktbildverzeichnissen</Description>
+    <Author>Marcel Besancon</Author>
+    <URL>http://www.lilfoot.de</URL>
+    <XMLVersion>102</XMLVersion>
+    <ShopVersion>316</ShopVersion>
+    <PluginID>lf_piccleaner</PluginID>
+    <Install>
+    	<Version nr="100">
+    		<CreateDate>2014-12-07</CreateDate>
+    	</Version>
+    	<Hooks>
+    		<Hook id="131">lf_piccleaner_hook131.php</Hook>
+    	</Hooks>
+        <Adminmenu>
+            <Customlink sort="1">
+                <Name>Bilder bereinigen</Name>
+                <Filename>lf_piccleaner.php</Filename>
+            </Customlink>
+        </Adminmenu>
+    </Install>
+</jtlshop3plugin>
