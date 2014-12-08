@@ -160,7 +160,7 @@ function init_cleanup() {
         if ($handle = opendir(PFAD_ROOT . "bilder/produkte/normal/")) {
             $oCheckPics_arr = array();
             while (false !== ($file = readdir($handle))) {
-                if (preg_match("(^(([a-zA-Z0-9-_ ])+\.(jpg|png))$)", $file) && strlen($file)>0) {
+                if (preg_match("(^(([a-zA-Z0-9-_ \.])+\.(jpg|png))$)", $file) && strlen($file)>0) {
                     fwrite($delFile, $file."\n");
                 }
             }
@@ -191,7 +191,7 @@ function init_variationencleanup() {
         if ($handle = opendir(PFAD_ROOT . "bilder/variationen/normal/")) {
             $oCheckPics_arr = array();
             while (false !== ($file = readdir($handle))) {
-                if (preg_match("(^(([a-zA-Z0-9-_ ])+\.(jpg|png))$)", $file) && strlen($file)>0) {
+                if (preg_match("(^(([a-zA-Z0-9-_ \.])+\.(jpg|png))$)", $file) && strlen($file)>0) {
                     fwrite($delFile, $file."\n");
                 }
             }
